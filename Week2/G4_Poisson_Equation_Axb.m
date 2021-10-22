@@ -127,7 +127,7 @@ for j=2:nj+1
                                             
         if (dom2Inp_ext(i,j)==1) %If we have to inpaint this pixel
             
-            idx_Ai(idx)=p; 
+            idx_Ai(idx)= p; 
             idx_Aj(idx) = p-(ni+2); 
             a_ij(idx) = -1;
             idx=idx+1;
