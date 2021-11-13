@@ -34,10 +34,10 @@ lambda2=1;
 %lambda2=10^-3; %Hola carola problem
 
 epHeaviside=1;
-eta=0.01;
+eta=1;
 %eta=1;
-tol=0.001;
-dt=(10^-2)/mu; 
+tol=0.1;
+dt=(10^1)/mu; 
 % dt=(10^1)/mu;
 iterMax=400;
 % reIni=0; %Try both of them

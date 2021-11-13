@@ -31,6 +31,7 @@ phi(ni+2,nj+2) = 0;
 phi(i,j) = phi_0;
 dif = inf;
 nIter = 0;
+figure('units','normalized','outerposition',[0 0 1 1])
 % The operation is terminated if the difference between the consecutive
 % level set functions are below a certain value or a number of iterations
 % are completed
@@ -112,7 +113,7 @@ while dif>tol && nIter<iterMax
     %The zero level set over the surface
     contour(phi>0);
     hold off
-    title('Phi Function');
+    title('Phi Function',FontSize=25);
 
     %Plot the curve evolution over the image
     subplot(1,2,2)
@@ -120,7 +121,7 @@ while dif>tol && nIter<iterMax
     colormap gray;
     hold on;
     contour(phi>0,'r')
-    title('Image and zero level set of Phi')
+    title(strcat('Image and zero level set of Phi, Iter:',string(nIter)),FontSize=25)
 
     axis off;
     hold off
